@@ -1,0 +1,37 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>TimeInMinsk</servlet-name>
+    <servlet-class>XmlSettings.MinskTIme</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>TimeInWashington</servlet-name>
+    <servlet-class>XmlSettings.WashingtonTIme</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>TimeInBeijing</servlet-name>
+    <servlet-class>XmlSettings.BeijingTime</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>TimeInMinsk</servlet-name>
+    <url-pattern>/timeminsk</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>TimeInWashington</servlet-name>
+    <url-pattern>/timewashington</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>TimeInBeijing</servlet-name>
+    <url-pattern>/timebeijing</url-pattern>
+  </servlet-mapping>
+</web-app>
